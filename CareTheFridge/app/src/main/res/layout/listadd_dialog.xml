@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvAddName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="재료 이름 :"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAddPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="가  격 :"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/tvAddName"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddName" />
+
+    <TextView
+        android:id="@+id/tvAddGram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="무  게 :"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/tvAddPrice"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddPrice" />
+
+    <EditText
+        android:id="@+id/edtAddName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="35dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/tvAddName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvAddName"
+        app:layout_constraintTop_toTopOf="@+id/tvAddName" />
+
+    <EditText
+        android:id="@+id/edtAddPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/edtAddName"
+        app:layout_constraintTop_toBottomOf="@+id/edtAddName" />
+
+    <EditText
+        android:id="@+id/edtAddGram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/edtAddPrice"
+        app:layout_constraintTop_toBottomOf="@+id/edtAddPrice" />
+
+    <Button
+        android:id="@+id/btnListAddCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="취소"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/edtAddGram"
+        app:layout_constraintTop_toBottomOf="@+id/edtAddGram" />
+
+    <Button
+        android:id="@+id/btnListAddOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="추가"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edtAddGram"
+        app:layout_constraintTop_toBottomOf="@+id/edtAddGram" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

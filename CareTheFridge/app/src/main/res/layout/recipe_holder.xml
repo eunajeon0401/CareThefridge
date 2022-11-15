@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/tvCookingTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="제 목 :"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvIngredient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="재 료 :"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/tvCookingTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvCookingTitle" />
+
+    <TextView
+        android:id="@+id/tvMenual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="레시피 :"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/tvIngredient"
+        app:layout_constraintTop_toBottomOf="@+id/tvIngredient" />
+
+    <TextView
+        android:id="@+id/tvCookingTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="김치 볶음밥 만들기"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCookingTitle"
+        app:layout_constraintStart_toEndOf="@+id/tvCookingTitle"
+        app:layout_constraintTop_toTopOf="@+id/tvCookingTitle" />
+
+    <TextView
+        android:id="@+id/tvIngredient2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="김치, 설탕, 간장, 햄, 고추가루, 굴소스"
+        app:layout_constraintBottom_toBottomOf="@+id/tvIngredient"
+        app:layout_constraintStart_toEndOf="@+id/tvIngredient"
+        app:layout_constraintTop_toTopOf="@+id/tvIngredient" />
+
+    <TextView
+        android:id="@+id/tvMenual2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="식용류에 다진 김치를 넣고 볶는다 어느 정도 볶아지면 설탕을 넣고 간장 한숟갈 정도 넣고 햄을 넣고 볶는다 어느정도 볶으면 밥을넣고 굴소스 3/1숟갈을 넣는다 기호에따라 참기름 넣기."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMenual" />
+</androidx.constraintlayout.widget.ConstraintLayout>

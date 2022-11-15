@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/tvRDTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="제 목 :"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRDIngredient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="재 료 :"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/tvRDTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvRDTitle" />
+
+    <TextView
+        android:id="@+id/tvRDMenual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="레시피 :"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/tvRDIngredient"
+        app:layout_constraintTop_toBottomOf="@+id/tvRDIngredient" />
+
+    <EditText
+        android:id="@+id/edtRDTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/tvRDTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvRDTitle"
+        app:layout_constraintTop_toTopOf="@+id/tvRDTitle"
+        app:layout_constraintVertical_bias="0.51" />
+
+    <EditText
+        android:id="@+id/edtRDIngredient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/tvRDIngredient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvRDIngredient"
+        app:layout_constraintTop_toTopOf="@+id/tvRDIngredient" />
+
+    <EditText
+        android:id="@+id/edtRDMenual"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/tvRDMenual"
+        app:layout_constraintTop_toBottomOf="@+id/tvRDMenual" />
+
+    <Button
+        android:id="@+id/btnRDCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:text="취소"
+        app:layout_constraintEnd_toStartOf="@+id/btnRDOk"
+        app:layout_constraintTop_toBottomOf="@+id/edtRDMenual" />
+
+    <Button
+        android:id="@+id/btnRDOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="저장"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtRDMenual" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
